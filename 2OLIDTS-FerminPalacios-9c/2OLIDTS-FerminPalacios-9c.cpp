@@ -1,15 +1,10 @@
 // 2OLIDTS-FerminPalacios-9c.cpp : Este archivo contiene la función "main". La ejecución del programa comienza y termina ahí.
-//
-
 #include <iostream>
-
 using namespace std;
-
 struct Nodo {
     int dato;
     Nodo* siguiente;
 };
-
 void agregarNodo(Nodo*& cabeza, int valor)
 {
     Nodo* nuevoNodo = new Nodo; //creando el apuntador haciael nuevo nodo
@@ -71,9 +66,7 @@ int main()
     }
     cout << "imprimiendo lista de numeros" << endl;
     imprimirlista(cabeza);
-
     borrarLista(cabeza);
-
     return 0;
 }
 
